@@ -5,7 +5,7 @@ import django.apps
 from django.core.exceptions import AppRegistryNotReady
 
 
-def choices(key):
+def getChoices(key):
     """ fetch the choices for a given key
     """
     from djvocab.models import Vocabulary
