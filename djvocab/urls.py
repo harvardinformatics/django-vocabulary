@@ -18,7 +18,7 @@ from rest_framework import routers
 from djvocab import serializers
 
 router = routers.DefaultRouter()
-router.register(r'vocabulary', serializers.VocabularyViewSet, 'vocabulary')
+router.register(r'vocabularies', serializers.VocabularyViewSet, 'vocabulary')
 urlpatterns = [
     url(r'^/', include(router.urls))
 ]
