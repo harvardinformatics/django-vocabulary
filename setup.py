@@ -44,6 +44,6 @@ setup (
         "Topic :: Utilities",
     ],
     install_requires = [
-        'Django==2.1.7',
+        'Django>2',
     ],
 )
