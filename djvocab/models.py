@@ -24,6 +24,6 @@ class Vocabulary(models.Model):
         verbose_name_plural = 'vocabularies'
 
     key = models.CharField(max_length=100)
-    value = models.CharField(max_length=200)
+    value = models.CharField(max_length=190)
     description = models.CharField(max_length=2000, blank=True)
     order = models.IntegerField(default=0)

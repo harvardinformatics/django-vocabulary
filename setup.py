@@ -45,5 +45,6 @@ setup (
     ],
     install_requires = [
         'Django>2',
+        'django-nose',
     ],
 )
