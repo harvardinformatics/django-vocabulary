@@ -23,7 +23,7 @@ class Vocabulary(models.Model):
         unique_together = ('key', 'value')
         verbose_name_plural = 'vocabularies'
 
-    key = models.CharField(max_length=100)
-    value = models.CharField(max_length=190)
+    key = models.CharField(max_length=90)
+    value = models.CharField(max_length=100)
     description = models.CharField(max_length=2000, blank=True)
     order = models.IntegerField(default=0)
