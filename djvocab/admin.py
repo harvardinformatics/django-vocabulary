@@ -11,6 +11,7 @@ class VocabularyAdmin(admin.ModelAdmin):
     ordering = ('key', )
     search_fields = ('key','value')
     list_editable = ('key', 'value', 'description', 'order')
+    list_filter = ('key',)
 
 admin.site.register(Vocabulary, VocabularyAdmin)
 
