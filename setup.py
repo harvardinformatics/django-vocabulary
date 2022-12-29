@@ -44,7 +44,6 @@ setup (
         "Topic :: Utilities",
     ],
     install_requires = [
-        'Django>2,<3',
-        'django-nose',
+        'Django>3,<4',
     ],
 )
