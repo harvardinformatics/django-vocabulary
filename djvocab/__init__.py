@@ -14,7 +14,7 @@ def getChoices(key):
         # as part of django.setup django tried to load all the app models
         # starting with the current app so an app using djvocab would not find the
         # Vocabulary model when choices was executed in it's model
-        django.apps.apps.get_model('Vocabulary')
+        django.apps.apps.get_model('djvocab.Vocabulary')
         choices = Vocabulary.objects.filter(key=key)
     except AppRegistryNotReady as e:
         choices = []
