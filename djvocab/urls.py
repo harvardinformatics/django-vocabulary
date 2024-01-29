@@ -13,12 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.conf import path
+from django.conf.urls import include
 from rest_framework import routers
 from djvocab import serializers
 
 router = routers.DefaultRouter()
 router.register(r'vocabularies', serializers.VocabularyViewSet, 'vocabulary')
 urlpatterns = [
-    url(r'^/', include(router.urls))
+    path(r'', include(router.urls))
 ]
